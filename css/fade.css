@@ -1,0 +1,22 @@
+/*  durationとpxの変更で調整可  */
+.fade-in {
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-property: opacity, transform;
+}
+.fade-top {
+    transform: translateY(-100px);
+}
+.fade-bottom {
+    transform: translateY(15px);
+}
+.fade-left {
+    transform: translateX(-100px);
+}
+.fade-right {
+    transform: translateX(100px);
+}
+.scroll-in {
+    opacity: 1;
+    transform: none;
+}

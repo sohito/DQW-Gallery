@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* ヘッダー */
+
+#header {
+    background: white;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 10;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+/* トップ */
+
+.top img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+/* POPULAR */
+
+h2 {
+    text-align: center;
+    padding-top: 90px;
+    margin-top: -14px;
+}
+
+/* カルセールスライダー */
+
+.slider {
+    margin-top: 24px;
+}
+
+.slider img {
+    height: auto;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* FAVORITE */
+
+section {
+    width: 92vw;
+    margin: 28px auto;
+    box-shadow: 0 0 16px gray;
+}
+
+section div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 12px 0 24px;
+}
+
+section img {
+    width: 100%;
+}
+
+section small {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section p {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* フッター */
+
+footer {
+    background: black;
+    padding: 32px 16px 16px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer section {
+    display: flex;
+    padding: 32px;
+    box-sizing: border-box;
+    gap: 32px;
+}
+
+footer small {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+footer h3 {
+    color: white;
+    margin-top: 2px;
+}
+
+footer img {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto 0;
+}
+
+footer p {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.type {
+    margin-top: 16px;
+}
+
+.type:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+footer button {
+    padding: 16px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    appearance: none;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.copy {
+    display: block;
+    text-align: center;
+    margin-top: 96px;
+}

@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ドロワーのボタン部分 */
+
+.drawer-btn {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: fixed;
+    display: block;
+    margin-left: auto;
+    z-index: 20;
+}
+
+.drawer-btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .4s;
+}
+
+.drawer-btn span:nth-child(1) {
+    transform: translate(-50%, -10px);
+}
+.drawer-btn span:nth-child(2) {
+    transform: translate(-50%, -50%);
+}
+.drawer-btn span:nth-child(3) {
+    transform: translate(-50%, 8px);
+}
+
+/* ドロワーボタンが押されたとき */
+
+.drawer-btn.active span:nth-child(1) {
+    transform: translate(-50%, 50%) rotate(225deg);
+    background: #ddd;
+    z-index: 13;
+}
+.drawer-btn.active span:nth-child(2) {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.drawer-btn.active span:nth-child(3) {
+    transform: translate(-50%, 50%) rotate(-225deg);
+    background: #ddd;
+    z-index: 13;
+}
+
+/* ドロワーのメニュー部分 */
+
+.drawer-nav {
+    width: 300px;
+    height: 100vh;
+    background: #111;
+    transform: translate(-300px);
+    transition: transform .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+
+.drawer-nav ul {
+    padding: 48px 20px 0;
+}
+
+.drawer-nav li {
+    color: white;
+    font-size: 14px;
+}
+
+.drawer-nav li:nth-child(1) {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 16px 0;
+}
+.drawer-nav li:nth-child(2) {
+    border-bottom: 1px solid white;
+    padding: 16px 0;
+}
+.drawer-nav li:nth-child(3) {
+    border-bottom: 1px solid white;
+    padding: 16px 0;
+}
+.drawer-nav li:nth-child(4) {
+    margin-top: 64px;
+}
+.drawer-nav li:nth-child(5) {
+    margin-top: 16px;
+}
+.drawer-nav li:nth-child(6) {
+    margin-top: 16px;
+}
+
+/* ドロワーメニューが開くとき */
+
+.drawer-nav.open {
+    transform: translate(0, 0);
+}
+
+/* ドロワーメニュー裏のオーバーレイ */
+.overlay {
+    background: black;
+    opacity: .7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+.hide {
+    display: block;
+}
