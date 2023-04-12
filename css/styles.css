@@ -21,7 +21,7 @@ h1 {
 
 .top img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     margin-top: 80px;
 }
@@ -167,6 +167,10 @@ footer button {
 @media(max-width:400px) {
     .author section {
         display: block;
+    }
+
+    .author img {
+        margin: 0 auto;
     }
 }
 
