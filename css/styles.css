@@ -164,6 +164,12 @@ footer button {
 
 /* widthが670px以上の時 */
 
+@media(max-width:400px) {
+    .author section {
+        display: block;
+    }
+}
+
 @media(min-width:670px) {
     .favorite {
         display: flex;
