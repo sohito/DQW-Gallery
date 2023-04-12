@@ -15,12 +15,12 @@
 <body>
     <header id="header">
         <h1>DQW-Gallery</h1>
-        <button type="button" class="drawer-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
     </header>
+    <button type="button" class="drawer-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <nav class="drawer-nav">
         <ul>
@@ -53,7 +53,7 @@
         </ul>
 
         <h2 id="favorite">FAVORITE</h2>
-        <div>
+        <div class="favorite">
             <section>
                 <img src="img/dqw10.jpg" alt="" class="fade-in fade-bottom">
                 <div>
@@ -129,33 +129,35 @@
 
     <footer>
         <h2 id="contact">CONTACT</h2>
-        <section>
-            <img src="img/authorsohito.jpg" alt="">
-            <div>
-                <small>描いた人</small>
-                <h3>渋谷そひと</h3>
-                <p>２０２５年にWebデザイナーに転職をすると決め、独学で勉強している社会人。空いた時間はほぼWebデザインの学習に費やす。ドットインストールでHTML、CSS、Javascriptを学び、このWebページではついにjQueryを使った動きのあるサイトを制作。</p>
-            </div>
-        </section>
-        <form action="">
-            <div class="type">
+        <div class="author">
+            <section>
+                <img src="img/authorsohito.jpg" alt="">
+                <div>
+                    <small>描いた人</small>
+                    <h3>渋谷そひと</h3>
+                    <p>２０２５年にWebデザイナーに転職をすると決め、独学で勉強している社会人。空いた時間はほぼWebデザインの学習に費やす。ドットインストールでHTML、CSS、Javascriptを学び、このWebページではついにjQueryを使った動きのあるサイトを制作。</p>
+                </div>
+            </section>
+            <form action="">
+                <div class="type">
+                    <label for="">
+                        <p>Name:</p>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="type">
+                    <label for="">
+                        <p>Mail:</p>
+                        <input type="text">
+                    </label>
+                </div>
                 <label for="">
-                    <p>Name:</p>
-                    <input type="text">
+                    <p>Message:</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
                 </label>
-            </div>
-            <div class="type">
-                <label for="">
-                    <p>Mail:</p>
-                    <input type="text">
-                </label>
-            </div>
-            <label for="">
-                <p>Message:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <button>SEND</button>
-        </form>
+                <button>SEND</button>
+            </form>
+        </div>
         <small class="copy">&copy;DQW-Gallery</small>
     </footer>
 

@@ -105,8 +105,8 @@ footer h3 {
 }
 
 footer img {
-    width: 40%;
-    height: 40%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
@@ -129,7 +129,7 @@ input {
 }
 
 textarea {
-    height: 80px;
+    height: 128px;
     width: 100%;
     box-sizing: border-box;
     outline: none;
@@ -160,4 +160,54 @@ footer button {
     display: block;
     text-align: center;
     margin-top: 96px;
+}
+
+/* widthが670px以上の時 */
+
+@media(min-width:670px) {
+    .favorite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .favorite section {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .author {
+        display: flex;
+        gap: 32px;
+    }
+
+    .author section {
+        flex: 1;
+        display: block;
+    }
+
+    .author img {
+        margin: 0 auto;
+    }
+
+    .author form {
+        flex: 1;
+    }
+}
+
+@media(min-width:1000px) {
+    .favorite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .favorite section {
+        width: calc((100% - 64px) / 3);
+    }
+
+    .author section {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
 }

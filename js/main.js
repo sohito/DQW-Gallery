@@ -5,11 +5,12 @@ $(function() {
         if($(this).hasClass('active')) {
             $(this).removeClass('active');
             $('.drawer-nav').removeClass('open');
+            $('.overlay').removeClass('hide');
         }else {
             $(this).addClass('active');
             $('.drawer-nav').addClass('open');
+            $('.overlay').addClass('hide');
         }
-        $('.overlay').addClass('hide');
     });
 });
 
